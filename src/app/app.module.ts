@@ -1,16 +1,26 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {HttpClientModule} from '@angular/common/http'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { NaviComponent } from './components/navi/navi.component';
+import { TodoComponent } from './components/todo/todo.component';
+import { PostComponent } from './components/post/post.component';
+import { ProductComponent } from './components/product/product.component';
 
 @NgModule({
-  declarations: [
-    AppComponent
+  declarations: [ //component kullanılabilmesi için burda tanımlı olması lazım
+    AppComponent,
+    NaviComponent,
+    TodoComponent,
+    PostComponent,
+    ProductComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
