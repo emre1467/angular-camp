@@ -8,6 +8,7 @@ import { NaviComponent } from './components/navi/navi.component';
 import { TodoComponent } from './components/todo/todo.component';
 import { PostComponent } from './components/post/post.component';
 import { ProductComponent } from './components/product/product.component';
+import { CategoryComponent } from './components/category/category.component';
 
 @NgModule({
   declarations: [ //component kullanılabilmesi için burda tanımlı olması lazım
@@ -16,6 +17,7 @@ import { ProductComponent } from './components/product/product.component';
     TodoComponent,
     PostComponent,
     ProductComponent,
+    CategoryComponent,
   ],
   imports: [
     BrowserModule,
